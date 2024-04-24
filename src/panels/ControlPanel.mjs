@@ -4,9 +4,9 @@ export class ControlPanel {
         this.physicsManager = physicsManager;
 
         const container = document.createElement('div');
-
         this.incrementButton = this.createHtmlButton(x, y, '+');
         this.decrementButton = this.createHtmlButton(x + 50, y, '-');
+        
 
         const buttonGroup = document.createElement('div');
         buttonGroup.style.display = 'flex';
@@ -48,6 +48,8 @@ export class ControlPanel {
         document.body.appendChild(container);
     }
 
+
+    
 
     createHtmlButton(x, y, innerText) {
         const button = document.createElement('button');

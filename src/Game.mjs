@@ -29,13 +29,13 @@ export class Game {
 
     this.gravityPannel = new ControlPanel(
       50,
-      gameScreen.gameContainer.y + gameScreen.gameContainer.height + 250,
+      gameScreen.gameContainer.y + gameScreen.gameContainer.height + 50,
       "Gravity:", physicsManager, "gravity"
     );
 
     this.numberOfShapesPerSecPanel = new ControlPanel(
       this.app.screen.width / 2,
-      gameScreen.gameContainer.y + gameScreen.gameContainer.height + 250,
+      gameScreen.gameContainer.y + gameScreen.gameContainer.height + 50,
       "Shapes per second:", physicsManager, "numberOfShapesPerSec"
     );
 
