@@ -16,11 +16,11 @@ export class Game {
     await this.initPIXI();
 
     const physicsManager = new PhysicsManager(1, 1);
-    const statsPanel = new StatsPanel(this.app.stage, 10, 100);
+    const statsPanel = new StatsPanel(this.app.stage, 10, 50);
     const gameScreen = new GameScreen(
       this.app.stage,
       0,
-      200,
+      100,
       this.app.screen.width,
       this.app.screen.height / 2,
       0xffffff,
@@ -29,13 +29,13 @@ export class Game {
 
     this.gravityPannel = new ControlPanel(
       50,
-      gameScreen.gameContainer.y + gameScreen.gameContainer.height + 50,
+      gameScreen.gameContainer.y + gameScreen.gameContainer.height + 10,
       "Gravity:", physicsManager, "gravity"
     );
 
     this.numberOfShapesPerSecPanel = new ControlPanel(
       this.app.screen.width / 2,
-      gameScreen.gameContainer.y + gameScreen.gameContainer.height + 50,
+      gameScreen.gameContainer.y + gameScreen.gameContainer.height + 10,
       "Shapes per second:", physicsManager, "numberOfShapesPerSec"
     );
 
